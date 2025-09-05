@@ -1,19 +1,26 @@
 <html>
     <head>
         <title>Aestoria</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="aestoria.js"></script>
         <link href="output.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
     </head>
-    <body style="background-image: url('https://i.pinimg.com/736x/e2/de/27/e2de27aee332b3aad90b56c74d319b32.jpg' ); background-repeat: repeat; /* makes it tile continuously */
-  background-size: auto; ">
-        <h1>Aestoria</h1>
-        <button onclick="search('Paintings')">Paintings</button>
-        <button onclick="search('Sculpture')">Sculpture</button>
-        <button onclick="search('Photographs')">Photographs</button>
-        <button onclick="search('Textile%20Arts')">Textile Arts</button>
-        <button onclick="search('Prints')">Prints</button>
-        <button onclick="search('Jewelry')">Jewelry</button>
-        <button onclick="search('Coins')">Coins</button>
+    <body class="bg-black text-white m-4">
+        <img src="aestorianame.png" class="h-30"/>
+        <h1 class="instrument-serif font-extralight text-3xl">Where aesthetics meet stories</h1>
+        <h1 class="pt-2 instrument-serif font-extralight text-2xl">Select category . . .</h1>
+        <div id="nav" class="flex-4 space-x-3 pt-2">
+        <button onclick="search('Paintings')" class="nav-btn bg-[url('paintnav.png')]"></button>
+    <button onclick="search('Sculpture')" class="nav-btn bg-[url('sculpnav.png')]"></button>
+    <button onclick="search('Photographs')" class="nav-btn bg-[url('photonav.png')]"></button>
+    <button onclick="search('Textile%20Arts')" class="nav-btn bg-[url('textilenav.png')]"></button>
+    <button onclick="search('Prints')" class="nav-btn bg-[url('printnav.png')]"></button>
+    <button onclick="search('Jewelry')" class="nav-btn bg-[url('jewelnav.png')]"></button>
+    <button onclick="search('Coins')" class="nav-btn bg-[url('coinsnav.png')]"></button>
+        </div>
         <h1><span id="trial"></span></h1>
         <div id="images" 
          style="display:flex; flex-wrap:wrap; justify-content: center; width:100%;">

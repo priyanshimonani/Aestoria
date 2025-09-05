@@ -1,1 +1,10 @@
 @import "tailwindcss";
+.instrument-serif {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+}
+@layer components {
+  .nav-btn {
+    @apply w-40 h-20 bg-cover bg-center rounded-lg hover:scale-105 hover:shadow-[4px_4px_8px_rgba(255,255,255,0.3)] focus:shadow-[4px_4px_8px_rgba(255,255,255,0.3)];
+  }
+}
