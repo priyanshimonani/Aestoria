@@ -8,10 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 
     </head>
-    <body class="bg-black text-white m-4">
+    <body class="bg-black text-white m-4 instrument-serif ">
+        
         <img src="aestorianame.png" class="h-30"/>
-        <h1 class="instrument-serif font-extralight text-3xl">Where aesthetics meet stories</h1>
-        <h1 class="pt-2 instrument-serif font-extralight text-2xl">Select category . . .</h1>
+        <h1 class=" text-3xl">Where aesthetics meet stories</h1>
+        <h1 class="pt-2 font-extralight text-2xl">Select category . . .</h1>
         <div id="nav" class="flex-4 space-x-3 pt-2">
         <button onclick="search('Paintings')" class="nav-btn bg-[url('paintnav.png')]"></button>
     <button onclick="search('Sculpture')" class="nav-btn bg-[url('sculpnav.png')]"></button>
@@ -22,8 +23,7 @@
     <button onclick="search('Coins')" class="nav-btn bg-[url('coinsnav.png')]"></button>
         </div>
         <h1><span id="trial"></span></h1>
-        <div id="images" 
-         style="display:flex; flex-wrap:wrap; justify-content: center; width:100%;">
+        <div id="images" class="flex flex-wrap justify-center w-full">
 
         </div>
     </body>
